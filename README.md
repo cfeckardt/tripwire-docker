@@ -17,8 +17,8 @@ scan for changes.
 
 ## Configuration
 
-`docker run --env CONFIGURE=1`
-`docker exec -it tripwire-docker bash`
+`docker run -v /host:/ cfeckardt/tripwire tripwire`
+`docker exec -it tripwire bash`
 
 ```
 twadmin --generate-keys -S /host/etc/tripwire/site.key
