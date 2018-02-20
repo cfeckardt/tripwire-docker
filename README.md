@@ -14,5 +14,18 @@ twcfg and twpol can be found.
 You want to mount the host container under `/host`, which is where tripwire will
 scan for changes.
 
-## Scan frequency
 
+## Configuration
+
+`docker run --env CONFIGURE=1`
+`docker exec -it tripwire-docker bash`
+
+```
+twadmin --generate-keys -S /host/etc/tripwire/site.key
+twadmin --generate-keys -L /host/etc/tripwire/local.key
+
+twadmin --create-cfgfile -S /host/etc/tripwire/site.key /etc/tripwire/twcfg.txt 
+twadmin --create-polfile -S /host/etc/tripwire/twpol.txt
+tripwire --init
+```
+## Scan frequency

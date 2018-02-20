@@ -1,9 +1,9 @@
 ROOT          =/usr/sbin
-POLFILE       =/etc/tripwire/tw.pol
-DBFILE        =/var/lib/tripwire/tripwiredb.twd
-REPORTFILE    =/var/lib/tripwire/report/report-$(DATE).twr
-SITEKEYFILE   =/etc/tripwire/site.key
-LOCALKEYFILE  =/etc/tripwire/local.key
+POLFILE       =/host/etc/tripwire/tw.pol
+DBFILE        =/host/var/lib/tripwire/tripwiredb.twd
+REPORTFILE    =/host/var/lib/tripwire/report/report-$(DATE).twr
+SITEKEYFILE   =/host/etc/tripwire/site.key
+LOCALKEYFILE  =/host/etc/tripwire/local.key
 EDITOR        =/usr/bin/editor
 LATEPROMPTING =false
 LOOSEDIRECTORYCHECKING =false
